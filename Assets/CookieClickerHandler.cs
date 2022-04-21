@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class CookieClickerHandler : MonoBehaviour
 {
-    public static int mpc = 1; //meows per click
+    public static float mpc = 1; //meows per click
     public void Click()
     {
         GameManager.meows += mpc;
         Debug.Log(GameManager.meows);
         
     }
+
 
     
 }

@@ -6,18 +6,20 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     public Text meowsText;
-    public static int meows;
+    public static float meows;
+    public static float mpc = 1; //meows per click
 
-    
-    void Start()
+    public void Click()
     {
-        
-    }
+        meows += mpc;
+        Debug.Log(meows);
 
+    }
     
     void Update()
     {
         meowsText.text = meows + " Meows";
         
     }
+
 }

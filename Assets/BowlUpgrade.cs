@@ -9,7 +9,7 @@ public class BowlUpgrade : MonoBehaviour
     public Text costText;
     int cost = 20;
 
-    public void Purchased()
+   public void Purchased()
     {
         if (GameManager.meows >= cost) //if we have the money
         {
